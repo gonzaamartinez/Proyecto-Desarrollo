@@ -102,16 +102,15 @@ header label:hover{
     font-size:400%;
     font-style: oblique;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10% auto;
 }
 
 .logo{
     box-shadow: 5px 5px 5px 5px #4e94ab56; 
-    height: 30%;
-    width: 50%;
+    height: 40%;
+    width: 60%;
+    margin-bottom: 8%;
 }
-
-
-
 
 .subtitulo{
     font-size: 250%;
