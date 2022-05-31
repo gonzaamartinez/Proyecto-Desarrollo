@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&family=Oswald:wght@500&display=swap');
 
 
 body{
@@ -1250,18 +1251,43 @@ header label:hover{
 
 /*Fin post-formulario*/
 
+
+
 /* Inicio Cursos específicos*/
 
-.container-vaso:hover .imagen-vaso{
-    transform: scale(1.3)
+.container-producto:hover .imagen-producto{
+    transform: scale(1.25)
+
 }
 
 
-.container-vaso{
-    overflow:hidden;
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    transition: all 1s;
+.container-producto img{
+    transition: all .9s ease;
     box-sizing: border-box;
+    width: 100%; 
+    border-radius: 2px;
+}
+
+
+.container-producto{
+    overflow: hidden;
+    width: 40%;
+    height: 30%;
+    display: block;
+    margin: 3% auto;
+}
+
+.parrafo-curso, .lista-preparaciones li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.subtitulo-curso{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 1%;
+}
+
+.curso-info{
+    margin-left: 1%;
+    margin-top: 2%;
 }
