@@ -9,89 +9,12 @@ body{
 }
 
 /* Header*/
-.menu-container{
-    display: flex;
+
+.container-fluid{
+    background: #4b9ab4;
 }
-
-header{
-    width: 100%;
-    background: #4e94ab;
-}
-
-#boton-menu{
-    display: none;
-}
-
-header label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-right: 1px solid #fff;
-}
-
-header label:hover{
-    cursor: pointer;
-    background: rgba(0, 0, 0, .3);
-}
-
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    
-}
-
-.menu li{
-    border-right: 1px solid #fff;
-}
-
-.menu li:hover{
-   background: rgba(0, 0, 0, .3);
-}
-
-.menu li a{
-    display: block;
-    padding: 15px 20px ;
-    color: #fff;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    header label {
-        display: block;
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-    }
-
-
-    .menu {
-        position: absolute;
-        background: #4e94ab;
-        width: 70%;
-        margin-left: -70%;
-        transition: all 0.2s;
-        z-index: 2;
-    }
-
-    .menu ul{
-        flex-direction: column;
-    }
-
-    .menu li{
-        border-top: 1px solid #fff;
-    }
-
-    #boton-menu:checked ~ .menu {
-        margin: 0;
-
-    }
-
-    .header{
-       height: 80%;
-    }
+.navbar{
+   background: #4b9ab4;
 }
 
 /*Fin header*/
