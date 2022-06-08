@@ -1,0 +1,1165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&family=Oswald:wght@500&display=swap');
+
+
+body{
+    background-color: rgba(207, 207, 207, 0.712);
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header*/
+
+.container-fluid{
+    background: #4b9ab4;
+}
+.navbar{
+   background: #4b9ab4;
+}
+
+/*Fin header*/
+
+
+
+/*Titulo, subtitulo y carrete*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 400%;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10% auto;
+}
+
+.logo{
+    box-shadow: 5px 5px 5px 5px #4e94ab56; 
+    height: 40%;
+    width: 60%;
+    margin-bottom: 8%;
+}
+
+.subtitulo{
+    font-size: 250%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1000px) {
+    .titulo{
+        font-size: 350%;
+    }
+}
+
+/* Fin Título, etc */
+
+/*Carrusel de fotos*/
+.carousel-container{
+    width: 50%;
+    display: block;
+    margin: 4% auto;
+    border: 2.5px solid #000;
+    box-shadow: 5px 5px 5px 5px #00000056;
+}
+
+.carousel-item img{
+    height: 550px;
+}
+
+@media (max-width: 1000px){
+    .carousel-item img{
+        height: 350px;
+    }
+}
+
+
+/* Redes sociales*/
+
+
+
+.redes-container{
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 7%;
+    padding: 0;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 20px 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: whitesmoke;
+    line-height: 50px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0,0 , .2) ;
+    transition: .2s;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translateY(-3) scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4) ;
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes-container ul li .pinterest:hover{
+    background: var(--pinterest);
+}
+
+.redes{
+    list-style: none;
+}
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --pinterest: #bd081c;
+}
+
+.copy{
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+/*Fin redes*/
+
+
+
+
+
+/* Inicio sección dulces*/
+
+.titulo-seccion{
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-top: 4%;
+    font-size: 270%;
+}
+
+
+.dulce-container-arriba{
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+    position: relative;
+}
+
+.dulce-container-arriba div{
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px; 
+    border: 1px solid grey;
+    width: 70vh;
+    height: 55vh;
+}
+
+
+.brownie-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.budin-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.brownie{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.budin{
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+
+.food-listing {
+    position: relative;
+  }
+  
+  .food-image {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+  }
+  
+  .food-image img{
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+ }
+  
+  .food-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(0, 0, 0, 0.158);
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .food-listing:hover .food-title {
+    opacity: 1;
+  }
+  
+  .food-listing:hover .food-image img {
+    filter: blur(2px);
+}
+
+
+
+.dulce-container-abajo{
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+.dulce-container-abajo div{
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 70vh;
+    height: 55vh;
+}
+
+
+.palmeritas-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.alfajor-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.palmeritas{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.alfajor{
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+@media (max-width: 768px) {
+    .dulce-container-arriba{
+        flex-direction: column;
+                
+    }
+
+    .dulce-container-abajo{
+        
+        flex-direction: column;
+   }
+
+   .dulce-container-arriba div{
+        display: block;
+        margin: 10px auto;
+        padding: 0px 10px;
+        width: 75vh;
+        height: 70vh;
+   }
+
+   .dulce-container-abajo div{
+        display: block;
+        margin: 10px auto;
+        padding: 0px 10px;
+        width: 75vh;
+        height: 70vh;
+        
+   }
+
+   .brownie-image{
+        margin-top: 15px;
+   }
+
+   .budin-image{
+        margin-top: 15px;
+
+   }
+
+   .palmeritas-image{
+        margin-top: 15px;
+   }
+
+   .alfajor-image{
+        margin-top: 15px;
+   }
+
+   .food-title{
+       top: 0%;
+   }
+
+   .food-listing{
+       z-index: 1;
+   }
+
+}
+
+
+/*Fin sección dulces*/
+
+
+
+
+
+
+
+
+/*Inicio sección salado*/
+
+.salado-container-arriba{
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+.salado-container-arriba div{
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 70vh;
+    height: 55vh;
+}
+
+
+.chipa-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.scon-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.chipa{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scon{
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+
+.salado-container-abajo{
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+.salado-container-abajo div{
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 70vh;
+    height: 55vh;
+}
+
+
+.palitos-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.tostadas-image{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+}
+
+.palitos{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tostadas{
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+@media (max-width: 768px) {
+    .salado-container-arriba{
+        flex-direction: column;
+    }
+
+    .salado-container-abajo{
+        flex-direction: column;
+    }
+
+    .salado-container-arriba div{
+        display: block;
+        margin: 10px auto;
+        padding: 0px 10px;
+        width: 75vh;
+        height: 70vh;
+    }
+
+    .salado-container-abajo div{
+        display: block;
+        margin: 10px auto;
+        padding: 0px 10px;
+        width: 75vh;
+        height: 70vh;
+    }
+
+    .chipa-image{
+        margin-top: 15px;
+    }
+
+    .scon-image{
+        margin-top: 15px;
+    }
+
+    .palitos-image{
+        margin-top: 15px;
+    }
+
+    .tostadas-image{
+        margin-top: 15px;
+    }
+    
+}
+
+/*Fin salado*/
+
+
+
+
+
+
+
+/*Inicio Catering*/
+
+.eventos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+}
+
+.lista-eventos{
+    font-weight: lighter;
+    margin-left: 9%;
+    list-style-type:circle;
+}
+
+.lista-eventos li{
+    margin-top: 1%;
+}
+
+.catering-item video{
+    height: 600px;
+}
+
+.catering-item img{
+    height: 600px;
+}
+
+
+.contacto{
+    font-size: 190%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@media (max-width: 1000px){
+    .catering-item img{
+        height: 400px;
+    }
+
+    .catering-item video{
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .video-catering-container{
+        width: 100%;
+    }
+
+    .servicio-left img{
+        
+        height: 100%;
+    }
+
+    .servicio-right img{
+        
+        height: 100%;
+    }
+
+    .catering-item img{
+        height: 300px;
+    }
+
+    .catering-item video{
+        height: 300px;
+    }
+}
+
+/*Fin Catering*/
+
+
+
+
+
+
+
+
+
+/*Inicio Cursos*/
+
+.cursos-listing {
+    position: relative;
+  }
+  
+  .cursos-image {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+  }
+  
+  .cursos-image img{
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+ }
+  
+  .cursos-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 71%;
+    width: 90%;
+    top: 10%;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(0, 0, 0, 0.158);
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cursos-listing:hover .cursos-title {
+    opacity: 1;
+  }
+  
+  .cursos-listing:hover .cursos-image img {
+    filter: opacity(.10);
+}
+
+
+
+
+.cursos-container-arriba{
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+.cursos-container-arriba div{
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 80vh;
+    height: 70vh;
+}
+
+
+.torta-image{
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;
+    transition: all 0.8s;;
+    }
+
+
+.cookies-image{
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;
+    transition: all 0.8s;
+    
+}
+
+
+.torta-titulo{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.cookies-titulo{
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: italic;
+}
+
+
+.torta-boton{
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    
+    border-radius: 5px;
+}
+
+.torta-boton:hover, .torta-boton:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
+    background-color: #4b9ab4;
+}
+
+.cookies-boton{
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+}
+
+.cookies-boton:hover, .cookies-boton:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
+    background-color: #4b9ab4;
+}
+
+
+.cursos-container-abajo{
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+.cursos-container-abajo div{
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 80vh;
+    height: 70vh;
+}
+
+
+.bombones-image{
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;  
+}
+
+.postres-image{
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;
+}
+
+.bombones-titulo{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.postres-titulo{
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: italic;
+}
+
+.bombones-boton{
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+    
+}
+
+.bombones-boton:hover, .bombones-boton:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
+    background-color: #4b9ab4;
+}
+
+
+.postres-boton{
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+}
+
+.postres-boton:hover, .postres-boton:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
+    background-color: #4b9ab4;
+}
+
+.boton{
+    margin-top: 15%;
+}
+
+
+@media (max-width: 768px) {
+    .cursos-container-arriba{
+        flex-direction: column;
+        
+    }
+
+    .cursos-container-abajo{
+        
+        flex-direction: column;
+    }
+
+    .cursos-container-arriba div{
+        display: block;
+        margin: 10px auto;
+        padding: 0px 10px;
+        width: 75vh;
+        height: 80vh;
+    }
+
+    .cursos-container-abajo div{
+        display: block;
+        margin: 10px auto;
+        padding: 0px 10px;
+        width: 75vh;
+        height: 80vh;
+    }
+
+    .torta-image{
+        width: 70%;
+        height: 65%;
+        margin-top: 15px;
+    }
+
+    .cookies-image{
+        width: 70%;
+        height: 65%;
+        margin-top: 15px;
+    }
+
+    .bombones-image{
+        width: 70%;
+        height: 65%;
+        margin-top: 15px;
+    }
+
+    .postres-image{
+        width: 70%;
+        height: 65%;
+        margin-top: 15px;
+    }
+
+    .cursos-title{
+        top: 0%;
+    }
+ 
+    .cursos-listing{
+        z-index: 1;
+    }
+}
+
+/* Fin cursos*/
+
+
+
+
+
+
+
+/*Inicio regalos*/
+
+.armamos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique
+}
+
+.regalo-container{
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+.regalo-container div{
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 80vh;
+    height: 70vh;
+}
+
+.caja-image{
+    width: 80%;
+    height: 75%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto; 
+}
+
+.caja-titulo{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.caja-parrafo{
+    margin-top: 10%;
+}
+
+
+.box-image{
+    width: 80%;
+    height: 75%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto; 
+}
+
+.box-titulo{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.box-parrafo{
+    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    .regalo-container{
+        flex-direction: column;
+                
+    }
+
+
+   .regalo-container div{
+        display: block;
+        margin: 15px auto;
+        padding: 0px 10px;
+        width: 75vh;
+        height: 70vh;
+        
+   }
+
+   .caja-image{
+        margin-top: 15px;
+   }
+
+   .box-image{
+        margin-top: 15px;
+
+   }
+
+
+}
+
+/*Fin regalos*/
+
+
+
+
+
+/* Inicio formulario*/
+
+.formulario {
+    width: 40%;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.opcion {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+  
+
+.inscribe-boton{
+    display: block;
+    margin: 30px auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 130%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+}
+
+.inscribe-boton:hover, .inscribe-boton:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
+    background-color: #4b9ab4;
+}
+
+
+/*Fin formulario*/
+
+
+
+
+
+
+/*Inicio post-formulario*/
+
+.gracias{
+    font-size: 190%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.boton-volver{
+    display: block;
+    margin: 30px auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 130%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+}
+
+.boton-volver:hover, .boton-volver:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
+    background-color: #4b9ab4;
+}
+
+/*Fin post-formulario*/
+
+
+
+/* Inicio Cursos específicos*/
+
+.container-producto:hover .imagen-producto{
+    transform: scale(1.25)
+
+}
+
+
+.container-producto img{
+    transition: all .9s ease;
+    box-sizing: border-box;
+    width: 100%; 
+    border-radius: 2px;
+}
+
+
+.container-producto{
+    overflow: hidden;
+    width: 40%;
+    height: 30%;
+    display: block;
+    margin: 3% auto;
+}
+
+.parrafo-curso, .lista-preparaciones li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.subtitulo-curso{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 1%;
+}
+
+.curso-info{
+    margin-left: 1%;
+    margin-top: 2%;
+}
