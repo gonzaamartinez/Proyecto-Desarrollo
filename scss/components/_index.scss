@@ -1,0 +1,55 @@
+/*Titulo, subtitulo y carrete*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 400%;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10% auto;
+}
+
+.logo{
+    box-shadow: 5px 5px 5px 5px #4e94ab56; 
+    height: 40%;
+    width: 60%;
+    margin-bottom: 8%;
+}
+
+.subtitulo{
+    font-size: 250%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1000px) {
+    .titulo{
+        font-size: 350%;
+    }
+}
+
+/* Fin Título, etc */
+
+/*Carrusel de fotos*/
+.carousel-container{
+    width: 50%;
+    display: block;
+    margin: 4% auto;
+    border: 2.5px solid #000;
+    box-shadow: 5px 5px 5px 5px #00000056;
+}
+
+.carousel-item img{
+    height: 550px;
+}
+
+@media (max-width: 1000px){
+    .carousel-item img{
+        height: 350px;
+    }
+}
+
+/* Fin carrusel*/

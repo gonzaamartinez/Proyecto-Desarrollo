@@ -1,0 +1,98 @@
+/*Inicio sección salado*/
+
+.salado-container-arriba{
+    @extend %seccion-container;
+
+    div {
+        @extend %seccion-div;
+    }
+}
+
+.chipa-image{
+    @extend %image-style;
+}
+
+.scon-image{
+    @extend %image-style;
+}
+
+.chipa{
+    @extend %nombre-style;
+}
+
+.scon{
+    @extend %nombre-style;
+}
+
+
+
+.salado-container-abajo{
+    @extend %seccion-container;
+
+    div {
+        @extend %seccion-div;
+    }
+}
+
+.palitos-image{
+    @extend %image-style;
+}
+
+.tostadas-image{
+    @extend %image-style;
+}
+
+.palitos{
+    @extend %nombre-style;
+}
+
+.tostadas{
+    @extend %nombre-style;
+}
+
+
+@media (max-width: 768px) {
+    .salado-container-arriba{
+        flex-direction: column;
+
+        div {
+            display: block;
+            margin: 10px auto;
+            padding: 0px 10px;
+            width: 75vh;
+            height: 70vh;
+        }
+    }
+
+    .salado-container-abajo{
+        flex-direction: column;
+
+        div {
+            display: block;
+            margin: 10px auto;
+            padding: 0px 10px;
+            width: 75vh;
+            height: 70vh;
+        }
+    }
+
+      
+    .chipa-image{
+        margin-top: 15px;
+    }
+
+    .scon-image{
+        margin-top: 15px;
+    }
+
+    .palitos-image{
+        margin-top: 15px;
+    }
+
+    .tostadas-image{
+        margin-top: 15px;
+    }
+    
+}
+
+/*Fin salado*/

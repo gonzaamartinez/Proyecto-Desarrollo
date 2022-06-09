@@ -1,12 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&family=Oswald:wght@500&display=swap");
-body {
-  background-color: rgba(207, 207, 207, 0.712);
-  font-family: sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
 /* Header*/
 .container-fluid {
   background: #4b9ab4;
@@ -67,6 +60,7 @@ body {
     height: 350px;
   }
 }
+/* Fin carrusel*/
 /* Redes sociales*/
 .redes-container {
   box-sizing: border-box;
@@ -78,7 +72,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .redes-container ul li {
   display: inline-block;
   margin: 20px 0;
@@ -86,7 +79,6 @@ body {
   height: 50px;
   text-align: center;
 }
-
 .redes-container ul li a {
   display: block;
   padding: 0 10px;
@@ -96,27 +88,23 @@ body {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s;
 }
-
-.redes-container ul:hover a {
-  filter: blur(2px);
-}
-
 .redes-container ul li a:hover {
   transform: translateY(-3) scale(1.05);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
   filter: none;
 }
-
 .redes-container ul li .facebook:hover {
   background: var(--facebook);
 }
-
 .redes-container ul li .instagram:hover {
   background: var(--instagram);
 }
-
 .redes-container ul li .pinterest:hover {
   background: var(--pinterest);
+}
+
+.redes-container ul:hover a {
+  filter: blur(2px);
 }
 
 .redes {
@@ -135,6 +123,72 @@ body {
 }
 
 /*Fin redes*/
+.regalo-container, .cursos-container-abajo, .cursos-container-arriba, .salado-container-abajo, .salado-container-arriba, .dulce-container-abajo, .dulce-container-arriba {
+  display: flex;
+  background-color: #4b9ab4;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.salado-container-abajo div, .salado-container-arriba div, .dulce-container-abajo div, .dulce-container-arriba div {
+  color: #fff;
+  padding: 2%;
+  background-color: #4b4a4a;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 70vh;
+  height: 55vh;
+}
+
+.tostadas-image, .palitos-image, .scon-image, .chipa-image, .alfajor-image, .palmeritas-image, .budin-image, .brownie-image {
+  width: 100%;
+  height: 85%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.box-titulo, .caja-titulo, .postres-titulo, .bombones-titulo, .cookies-titulo, .torta-titulo, .tostadas, .palitos, .scon, .chipa, .alfajor, .palmeritas, .budin, .brownie {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.regalo-container div, .cursos-container-abajo div, .cursos-container-arriba div {
+  color: #fff;
+  padding: 2%;
+  background-color: #4b4a4a;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 80vh;
+  height: 70vh;
+}
+
+.box-image, .caja-image, .postres-image, .bombones-image, .cookies-image, .torta-image {
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+  transition: all 0.8s;
+}
+
+.postres-boton, .bombones-boton, .cookies-boton, .torta-boton {
+  display: block;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8470588235);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  font-weight: 500;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
 /* Inicio sección dulces*/
 .titulo-seccion {
   display: flex;
@@ -146,47 +200,8 @@ body {
 }
 
 .dulce-container-arriba {
-  display: flex;
-  background-color: #4b9ab4;
-  margin: 20px;
-  justify-content: space-around;
   position: relative;
 }
-
-.dulce-container-arriba div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 70vh;
-  height: 55vh;
-}
-
-.brownie-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.budin-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.brownie {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.budin {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 .food-listing {
   position: relative;
 }
@@ -197,7 +212,6 @@ body {
   position: relative;
   top: 30px;
 }
-
 .food-image img {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
@@ -231,52 +245,8 @@ body {
   filter: blur(2px);
 }
 
-.dulce-container-abajo {
-  display: flex;
-  background-color: #4b9ab4;
-  margin: 20px;
-  justify-content: space-around;
-}
-
-.dulce-container-abajo div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 70vh;
-  height: 55vh;
-}
-
-.palmeritas-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.alfajor-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.palmeritas {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.alfajor {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 @media (max-width: 768px) {
   .dulce-container-arriba {
-    flex-direction: column;
-  }
-  .dulce-container-abajo {
     flex-direction: column;
   }
   .dulce-container-arriba div {
@@ -286,6 +256,9 @@ body {
     width: 75vh;
     height: 70vh;
   }
+  .dulce-container-abajo {
+    flex-direction: column;
+  }
   .dulce-container-abajo div {
     display: block;
     margin: 10px auto;
@@ -293,16 +266,7 @@ body {
     width: 75vh;
     height: 70vh;
   }
-  .brownie-image {
-    margin-top: 15px;
-  }
-  .budin-image {
-    margin-top: 15px;
-  }
-  .palmeritas-image {
-    margin-top: 15px;
-  }
-  .alfajor-image {
+  .brownie-image .budin-image .palmeritas-image .alfajor-image {
     margin-top: 15px;
   }
   .food-title {
@@ -314,93 +278,8 @@ body {
 }
 /*Fin sección dulces*/
 /*Inicio sección salado*/
-.salado-container-arriba {
-  display: flex;
-  background-color: #4b9ab4;
-  margin: 20px;
-  justify-content: space-around;
-}
-
-.salado-container-arriba div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 70vh;
-  height: 55vh;
-}
-
-.chipa-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.scon-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.chipa {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.scon {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.salado-container-abajo {
-  display: flex;
-  background-color: #4b9ab4;
-  margin: 20px;
-  justify-content: space-around;
-}
-
-.salado-container-abajo div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 70vh;
-  height: 55vh;
-}
-
-.palitos-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.tostadas-image {
-  width: 100%;
-  height: 85%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-.palitos {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.tostadas {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 @media (max-width: 768px) {
   .salado-container-arriba {
-    flex-direction: column;
-  }
-  .salado-container-abajo {
     flex-direction: column;
   }
   .salado-container-arriba div {
@@ -409,6 +288,9 @@ body {
     padding: 0px 10px;
     width: 75vh;
     height: 70vh;
+  }
+  .salado-container-abajo {
+    flex-direction: column;
   }
   .salado-container-abajo div {
     display: block;
@@ -447,7 +329,6 @@ body {
   margin-left: 9%;
   list-style-type: circle;
 }
-
 .lista-eventos li {
   margin-top: 1%;
 }
@@ -507,7 +388,6 @@ body {
   position: relative;
   top: 30px;
 }
-
 .cursos-image img {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
@@ -540,92 +420,9 @@ body {
   filter: opacity(0.1);
 }
 
-.cursos-container-arriba {
-  display: flex;
-  background-color: #4b9ab4;
-  margin: 20px;
-  justify-content: space-around;
-}
-
-.cursos-container-arriba div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 80vh;
-  height: 70vh;
-}
-
-.torta-image {
-  width: 100%;
-  height: 80%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-  transition: all 0.8s;
-}
-
-.cookies-image {
-  width: 100%;
-  height: 80%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-  transition: all 0.8s;
-}
-
-.torta-titulo {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
-}
-
-.cookies-titulo {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
-}
-
-.torta-boton {
-  display: block;
-  margin: 0 auto;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.8470588235);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  height: 36px;
-  line-height: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 90%;
-  font-weight: 500;
-  letter-spacing: 1%;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
 .torta-boton:hover, .torta-boton:focus {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   background-color: #4b9ab4;
-}
-
-.cookies-boton {
-  display: block;
-  margin: 0 auto;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.8470588235);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  height: 36px;
-  line-height: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 90%;
-  font-weight: 500;
-  letter-spacing: 1%;
-  text-transform: uppercase;
-  border-radius: 5px;
 }
 
 .cookies-boton:hover, .cookies-boton:focus {
@@ -633,90 +430,9 @@ body {
   background-color: #4b9ab4;
 }
 
-.cursos-container-abajo {
-  display: flex;
-  background-color: #4b9ab4;
-  margin: 20px;
-  justify-content: space-around;
-}
-
-.cursos-container-abajo div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 80vh;
-  height: 70vh;
-}
-
-.bombones-image {
-  width: 100%;
-  height: 80%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-}
-
-.postres-image {
-  width: 100%;
-  height: 80%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-}
-
-.bombones-titulo {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
-}
-
-.postres-titulo {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
-}
-
-.bombones-boton {
-  display: block;
-  margin: 0 auto;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.8470588235);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  height: 36px;
-  line-height: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 90%;
-  font-weight: 500;
-  letter-spacing: 1%;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
 .bombones-boton:hover, .bombones-boton:focus {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   background-color: #4b9ab4;
-}
-
-.postres-boton {
-  display: block;
-  margin: 0 auto;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.8470588235);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  height: 36px;
-  line-height: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 90%;
-  font-weight: 500;
-  letter-spacing: 1%;
-  text-transform: uppercase;
-  border-radius: 5px;
 }
 
 .postres-boton:hover, .postres-boton:focus {
@@ -729,10 +445,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cursos-container-arriba {
-    flex-direction: column;
+  .cursos-title {
+    height: 66%;
+    width: 68%;
+    left: 16%;
+    top: 6%;
   }
-  .cursos-container-abajo {
+  .cursos-container-arriba {
     flex-direction: column;
   }
   .cursos-container-arriba div {
@@ -741,6 +460,9 @@ body {
     padding: 0px 10px;
     width: 75vh;
     height: 80vh;
+  }
+  .cursos-container-abajo {
+    flex-direction: column;
   }
   .cursos-container-abajo div {
     display: block;
@@ -769,14 +491,45 @@ body {
     height: 65%;
     margin-top: 15px;
   }
-  .cursos-title {
-    top: 0%;
-  }
   .cursos-listing {
     z-index: 1;
   }
 }
 /* Fin cursos*/
+/* Inicio Cursos específicos*/
+.container-producto:hover .imagen-producto {
+  transform: scale(1.25);
+}
+
+.container-producto {
+  overflow: hidden;
+  width: 40%;
+  height: 30%;
+  display: block;
+  margin: 3% auto;
+}
+.container-producto img {
+  transition: all 0.9s ease;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.parrafo-curso, .lista-preparaciones li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.subtitulo-curso {
+  font-family: "Oswald", sans-serif;
+  padding-top: 1%;
+}
+
+.curso-info {
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
 /*Inicio regalos*/
 .armamos {
   margin-top: 5%;
@@ -788,55 +541,8 @@ body {
   font-style: oblique;
 }
 
-.regalo-container {
-  display: flex;
-  background-color: #4b9ab4;
-  margin: 20px;
-  justify-content: space-around;
-}
-
-.regalo-container div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 80vh;
-  height: 70vh;
-}
-
-.caja-image {
-  width: 80%;
-  height: 75%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-}
-
-.caja-titulo {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
-}
-
 .caja-parrafo {
   margin-top: 10%;
-}
-
-.box-image {
-  width: 80%;
-  height: 75%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-}
-
-.box-titulo {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
 }
 
 .box-parrafo {
@@ -944,39 +650,77 @@ body {
 }
 
 /*Fin post-formulario*/
-/* Inicio Cursos específicos*/
-.container-producto:hover .imagen-producto {
-  transform: scale(1.25);
+.dulce-container-arriba, .dulce-container-abajo, .salado-container-arriba, .salado-container-abajo, .cursos-container-arriba, .cursos-container-abajo, .regalo-container {
+  display: flex;
+  background-color: #4b9ab4;
+  margin: 20px;
+  justify-content: space-around;
 }
 
-.container-producto img {
-  transition: all 0.9s ease;
-  box-sizing: border-box;
+.dulce-container-arriba div, .dulce-container-abajo div, .salado-container-arriba div, .salado-container-abajo div {
+  color: #fff;
+  padding: 2%;
+  background-color: #4b4a4a;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 70vh;
+  height: 55vh;
+}
+
+.brownie-image, .budin-image, .palmeritas-image, .alfajor-image, .chipa-image, .scon-image, .palitos-image, .tostadas-image {
   width: 100%;
-  border-radius: 2px;
+  height: 85%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-.container-producto {
-  overflow: hidden;
-  width: 40%;
-  height: 30%;
+.brownie, .budin, .palmeritas, .alfajor, .chipa, .scon, .palitos, .tostadas, .torta-titulo, .cookies-titulo, .bombones-titulo, .postres-titulo, .caja-titulo, .box-titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.cursos-container-arriba div, .cursos-container-abajo div, .regalo-container div {
+  color: #fff;
+  padding: 2%;
+  background-color: #4b4a4a;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 80vh;
+  height: 70vh;
+}
+
+.torta-image, .cookies-image, .bombones-image, .postres-image, .caja-image, .box-image {
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
   display: block;
-  margin: 3% auto;
+  margin: 0 auto;
+  transition: all 0.8s;
 }
 
-.parrafo-curso, .lista-preparaciones li {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+.torta-boton, .cookies-boton, .bombones-boton, .postres-boton {
+  display: block;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8470588235);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  font-weight: 500;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
-.subtitulo-curso {
-  font-family: "Oswald", sans-serif;
-  padding-top: 1%;
-}
-
-.curso-info {
-  margin-left: 1%;
-  margin-top: 2%;
+body {
+  background-color: rgba(207, 207, 207, 0.712);
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,74 @@
+/*Inicio regalos*/
+
+.armamos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique
+}
+
+.regalo-container{
+  @extend %seccion-container;
+}
+
+.regalo-container div{
+  @extend %curso-container;
+}
+
+.caja-image{
+  @extend %curso-image;
+}
+
+.caja-titulo{
+    @extend %nombre-style;
+}
+
+.caja-parrafo{
+    margin-top: 10%;
+}
+
+
+.box-image{
+    @extend %curso-image;
+}
+
+.box-titulo{
+    @extend %nombre-style;
+}
+
+.box-parrafo{
+    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    .regalo-container{
+        flex-direction: column;
+
+        div{
+            display: block;
+            margin: 15px auto;
+            padding: 0px 10px;
+            width: 75vh;
+            height: 70vh;
+        
+        }
+                
+    }
+
+
+   .caja-image{
+        margin-top: 15px;
+   }
+
+   .box-image{
+        margin-top: 15px;
+
+   }
+
+
+}
+
+/*Fin regalos*/

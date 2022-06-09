@@ -1,0 +1,37 @@
+/* Inicio Cursos específicos*/
+
+.container-producto:hover .imagen-producto{
+    transform: scale(1.25)
+
+}
+
+.container-producto{
+    overflow: hidden;
+    width: 40%;
+    height: 30%;
+    display: block;
+    margin: 3% auto;
+
+    img{
+        transition: all .9s ease;
+        box-sizing: border-box;
+        width: 100%; 
+        border-radius: 2px;
+    }
+
+}
+
+.parrafo-curso, .lista-preparaciones li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.subtitulo-curso{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 1%;
+}
+
+.curso-info{
+    margin-left: 1%;
+    margin-top: 2%;
+}

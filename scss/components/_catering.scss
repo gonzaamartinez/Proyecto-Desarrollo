@@ -1,0 +1,78 @@
+/*Inicio Catering*/
+
+.eventos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+}
+
+.lista-eventos{
+    font-weight: lighter;
+    margin-left: 9%;
+    list-style-type:circle;
+
+    li{
+        margin-top: 1%;
+    }
+}
+
+.catering-item video{
+    height: 600px;
+}
+
+.catering-item img{
+    height: 600px;
+}
+
+
+.contacto{
+    font-size: 190%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@media (max-width: 1000px){
+    .catering-item img{
+        height: 400px;
+    }
+
+    .catering-item video{
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .video-catering-container{
+        width: 100%;
+    }
+
+    .servicio-left img{
+        
+        height: 100%;
+    }
+
+    .servicio-right img{
+        
+        height: 100%;
+    }
+
+    .catering-item img{
+        height: 300px;
+    }
+
+    .catering-item video{
+        height: 300px;
+    }
+}
+
+/*Fin Catering*/

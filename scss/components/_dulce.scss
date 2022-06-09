@@ -1,0 +1,160 @@
+@import "../base/colors";
+@import "../base/extend";
+
+/* Inicio sección dulces*/
+
+
+.titulo-seccion{
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-top: 4%;
+    font-size: 270%;
+}
+
+
+.dulce-container-arriba{
+    @extend %seccion-container;
+    position: relative;
+
+    div {
+        @extend %seccion-div;
+    }
+}
+
+.brownie-image{
+    @extend %image-style;
+}
+
+.budin-image{
+    @extend %image-style;
+}
+
+.brownie{
+    @extend %nombre-style;
+}
+
+.budin{
+    @extend %nombre-style;
+}
+
+
+
+.food-listing {
+    position: relative;
+  }
+  
+  .food-image {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+
+    img {
+        filter: blur(0px);
+        transition: filter 0.3s ease-in;
+        transform: scale(1.1);
+
+    }
+  }
+  
+  
+  .food-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(0, 0, 0, 0.158);
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .food-listing:hover .food-title {
+    opacity: 1;
+  }
+  
+  .food-listing:hover .food-image img {
+    filter: blur(2px);
+  }
+
+
+.dulce-container-abajo{
+    @extend %seccion-container;
+
+    div {
+        @extend %seccion-div;
+    }
+}
+
+.palmeritas-image{
+    @extend %image-style;
+}
+
+.alfajor-image{
+    @extend %image-style;
+}
+
+.palmeritas{
+    @extend %nombre-style;
+    
+}
+
+.alfajor{
+    @extend %nombre-style;
+}
+
+
+@media (max-width: 768px) {
+    .dulce-container-arriba{
+        flex-direction: column;
+
+        div {
+            display: block;
+            margin: 10px auto;
+            padding: 0px 10px;
+            width: 75vh;
+            height: 70vh;
+        }
+                
+    }
+
+    .dulce-container-abajo{
+        flex-direction: column;
+
+        div {
+            display: block;
+            margin: 10px auto;
+            padding: 0px 10px;
+            width: 75vh;
+            height: 70vh;
+        }
+   }
+
+  .brownie-image .budin-image .palmeritas-image .alfajor-image{
+        margin-top: 15px;
+   }
+
+   .food-title{
+       top: 0%;
+   }
+
+   .food-listing{
+       z-index: 1;
+   }
+
+}
+
+
+/*Fin sección dulces*/
