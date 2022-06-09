@@ -15,17 +15,18 @@
     background-color: #4b9ab4;
     margin: 20px;
     justify-content:space-around;
+
+    div {
+        color: #fff;
+        padding: 2%;
+        background-color: #4b4a4a;
+        margin: 10px;
+        border: 1px solid grey;
+        width: 80vh;
+        height: 70vh;
+    }
 }
 
-.regalo-container div{
-    color: #fff;
-    padding: 2%;
-    background-color: #4b4a4a;
-    margin: 10px;
-    border: 1px solid grey;
-    width: 80vh;
-    height: 70vh;
-}
 
 .caja-image{
     width: 80%;
