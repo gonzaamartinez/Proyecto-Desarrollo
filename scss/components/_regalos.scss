@@ -11,19 +11,35 @@
 }
 
 .regalo-container{
-  @extend %seccion-container;
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
 }
 
 .regalo-container div{
-  @extend %curso-container;
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 80vh;
+    height: 70vh;
 }
 
 .caja-image{
-  @extend %curso-image;
+    width: 80%;
+    height: 75%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto; 
 }
 
 .caja-titulo{
-    @extend %nombre-style;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 .caja-parrafo{
@@ -32,11 +48,18 @@
 
 
 .box-image{
-    @extend %curso-image;
+    width: 80%;
+    height: 75%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto; 
 }
 
 .box-titulo{
-    @extend %nombre-style;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 .box-parrafo{
@@ -46,18 +69,16 @@
 @media (max-width: 768px) {
     .regalo-container{
         flex-direction: column;
-
-        div{
+          
+        div {
             display: block;
             margin: 15px auto;
             padding: 0px 10px;
-            width: 75vh;
+            width: 70vh;
             height: 70vh;
         
         }
-                
     }
-
 
    .caja-image{
         margin-top: 15px;
@@ -67,7 +88,6 @@
         margin-top: 15px;
 
    }
-
 
 }
 

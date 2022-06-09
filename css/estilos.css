@@ -123,7 +123,7 @@
 }
 
 /*Fin redes*/
-.regalo-container, .cursos-container-abajo, .cursos-container-arriba, .salado-container-abajo, .salado-container-arriba, .dulce-container-abajo, .dulce-container-arriba {
+.salado-container-abajo, .salado-container-arriba, .dulce-container-abajo, .dulce-container-arriba {
   display: flex;
   background-color: #4b9ab4;
   margin: 20px;
@@ -146,47 +146,11 @@
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-.box-titulo, .caja-titulo, .postres-titulo, .bombones-titulo, .cookies-titulo, .torta-titulo, .tostadas, .palitos, .scon, .chipa, .alfajor, .palmeritas, .budin, .brownie {
+.tostadas, .palitos, .scon, .chipa, .alfajor, .palmeritas, .budin, .brownie {
   text-align: center;
   font-size: 150%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
-}
-
-.regalo-container div, .cursos-container-abajo div, .cursos-container-arriba div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 80vh;
-  height: 70vh;
-}
-
-.box-image, .caja-image, .postres-image, .bombones-image, .cookies-image, .torta-image {
-  width: 100%;
-  height: 80%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-  transition: all 0.8s;
-}
-
-.postres-boton, .bombones-boton, .cookies-boton, .torta-boton {
-  display: block;
-  margin: 0 auto;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.8470588235);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  height: 36px;
-  line-height: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 90%;
-  font-weight: 500;
-  letter-spacing: 1%;
-  text-transform: uppercase;
-  border-radius: 5px;
 }
 
 /* Inicio sección dulces*/
@@ -388,6 +352,7 @@
   position: relative;
   top: 30px;
 }
+
 .cursos-image img {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
@@ -420,9 +385,91 @@
   filter: opacity(0.1);
 }
 
+.cursos-container-arriba {
+  display: flex;
+  background-color: #4b9ab4;
+  margin: 20px;
+  justify-content: space-around;
+}
+.cursos-container-arriba div {
+  color: #fff;
+  padding: 2%;
+  background-color: #4b4a4a;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 80vh;
+  height: 70vh;
+}
+
+.torta-image {
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+  transition: all 0.8s;
+}
+
+.cookies-image {
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+  transition: all 0.8s;
+}
+
+.torta-titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.cookies-titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.torta-boton {
+  display: block;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8470588235);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  font-weight: 500;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
 .torta-boton:hover, .torta-boton:focus {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   background-color: #4b9ab4;
+}
+
+.cookies-boton {
+  display: block;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8470588235);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  font-weight: 500;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .cookies-boton:hover, .cookies-boton:focus {
@@ -430,9 +477,89 @@
   background-color: #4b9ab4;
 }
 
+.cursos-container-abajo {
+  display: flex;
+  background-color: #4b9ab4;
+  margin: 20px;
+  justify-content: space-around;
+}
+.cursos-container-abajo div {
+  color: #fff;
+  padding: 2%;
+  background-color: #4b4a4a;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 80vh;
+  height: 70vh;
+}
+
+.bombones-image {
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+.postres-image {
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+.bombones-titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.postres-titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.bombones-boton {
+  display: block;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8470588235);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  font-weight: 500;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
 .bombones-boton:hover, .bombones-boton:focus {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   background-color: #4b9ab4;
+}
+
+.postres-boton {
+  display: block;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8470588235);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 36px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  font-weight: 500;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .postres-boton:hover, .postres-boton:focus {
@@ -445,12 +572,6 @@
 }
 
 @media (max-width: 768px) {
-  .cursos-title {
-    height: 66%;
-    width: 68%;
-    left: 16%;
-    top: 6%;
-  }
   .cursos-container-arriba {
     flex-direction: column;
   }
@@ -458,8 +579,8 @@
     display: block;
     margin: 10px auto;
     padding: 0px 10px;
-    width: 75vh;
-    height: 80vh;
+    width: 55vh;
+    height: 50vh;
   }
   .cursos-container-abajo {
     flex-direction: column;
@@ -468,8 +589,8 @@
     display: block;
     margin: 10px auto;
     padding: 0px 10px;
-    width: 75vh;
-    height: 80vh;
+    width: 55vh;
+    height: 50vh;
   }
   .torta-image {
     width: 70%;
@@ -491,11 +612,16 @@
     height: 65%;
     margin-top: 15px;
   }
+  .cursos-title {
+    height: 66%;
+    width: 68%;
+    top: 10%;
+    left: 16%;
+  }
   .cursos-listing {
     z-index: 1;
   }
 }
-/* Fin cursos*/
 /* Inicio Cursos específicos*/
 .container-producto:hover .imagen-producto {
   transform: scale(1.25);
@@ -541,8 +667,55 @@
   font-style: oblique;
 }
 
+.regalo-container {
+  display: flex;
+  background-color: #4b9ab4;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.regalo-container div {
+  color: #fff;
+  padding: 2%;
+  background-color: #4b4a4a;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 80vh;
+  height: 70vh;
+}
+
+.caja-image {
+  width: 80%;
+  height: 75%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+.caja-titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
 .caja-parrafo {
   margin-top: 10%;
+}
+
+.box-image {
+  width: 80%;
+  height: 75%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+.box-titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
 }
 
 .box-parrafo {
@@ -557,7 +730,7 @@
     display: block;
     margin: 15px auto;
     padding: 0px 10px;
-    width: 75vh;
+    width: 70vh;
     height: 70vh;
   }
   .caja-image {
@@ -650,7 +823,7 @@
 }
 
 /*Fin post-formulario*/
-.dulce-container-arriba, .dulce-container-abajo, .salado-container-arriba, .salado-container-abajo, .cursos-container-arriba, .cursos-container-abajo, .regalo-container {
+.dulce-container-arriba, .dulce-container-abajo, .salado-container-arriba, .salado-container-abajo {
   display: flex;
   background-color: #4b9ab4;
   margin: 20px;
@@ -673,47 +846,11 @@
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-.brownie, .budin, .palmeritas, .alfajor, .chipa, .scon, .palitos, .tostadas, .torta-titulo, .cookies-titulo, .bombones-titulo, .postres-titulo, .caja-titulo, .box-titulo {
+.brownie, .budin, .palmeritas, .alfajor, .chipa, .scon, .palitos, .tostadas {
   text-align: center;
   font-size: 150%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
-}
-
-.cursos-container-arriba div, .cursos-container-abajo div, .regalo-container div {
-  color: #fff;
-  padding: 2%;
-  background-color: #4b4a4a;
-  margin: 10px;
-  border: 1px solid grey;
-  width: 80vh;
-  height: 70vh;
-}
-
-.torta-image, .cookies-image, .bombones-image, .postres-image, .caja-image, .box-image {
-  width: 100%;
-  height: 80%;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  display: block;
-  margin: 0 auto;
-  transition: all 0.8s;
-}
-
-.torta-boton, .cookies-boton, .bombones-boton, .postres-boton {
-  display: block;
-  margin: 0 auto;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.8470588235);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  height: 36px;
-  line-height: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 90%;
-  font-weight: 500;
-  letter-spacing: 1%;
-  text-transform: uppercase;
-  border-radius: 5px;
 }
 
 body {

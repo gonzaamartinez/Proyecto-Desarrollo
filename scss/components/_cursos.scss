@@ -1,3 +1,5 @@
+
+
 /*Inicio Cursos*/
 
 .cursos-listing {
@@ -9,13 +11,13 @@
     overflow: hidden;
     position: relative;
     top: 30px;
-
-    img {
-        filter: blur(0px);
-        transition: filter 0.3s ease-in;
-        transform: scale(1.1);
-    }
   }
+  
+  .cursos-image img{
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+ }
   
   .cursos-title {
     font-size: 1.5em;
@@ -48,57 +50,126 @@
 
 
 .cursos-container-arriba{
-   @extend %seccion-container;
-    
-   div{
-        @extend %curso-container;
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+
+    div {
+        color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 80vh;
+    height: 70vh;
     }
 }
 
 
+
 .torta-image{
-    @extend %curso-image;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;
+    transition: all 0.8s;;
     }
 
 
 .cookies-image{
-   @extend %curso-image;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;
+    transition: all 0.8s;
+    
 }
 
 
 .torta-titulo{
-    @extend %nombre-style;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 .cookies-titulo{
-    @extend %nombre-style;
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: italic;
 }
 
 
 .torta-boton{
-    @extend %boton-curso;
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    
+    border-radius: 5px;
 }
 
 .torta-boton:hover, .torta-boton:focus {
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
-    background-color: $color-principal;
+    background-color: #4b9ab4;
 }
 
 .cookies-boton{
-    @extend %boton-curso;
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+
+    border-radius: 5px;
 }
 
 .cookies-boton:hover, .cookies-boton:focus {
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
-    background-color: $color-principal;
+    background-color: #4b9ab4;
 }
 
 
 .cursos-container-abajo{
-    @extend %seccion-container;
-    
-   div{
-        @extend %curso-container;
+    display: flex;
+    background-color: #4b9ab4;
+    margin: 20px;
+    justify-content:space-around;
+
+    div {
+    color: #fff;
+    padding: 2%;
+    background-color: #4b4a4a;
+    margin: 10px;
+    border: 1px solid grey;
+    width: 80vh;
+    height: 70vh;
     }
 }
 
@@ -106,40 +177,86 @@
 
 
 .bombones-image{
-    @extend %curso-image;  
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;  
 }
 
 .postres-image{
-    @extend %curso-image;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
+    display: block;
+    margin: 0 auto;
 }
 
 .bombones-titulo{
-    @extend %nombre-style;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 .postres-titulo{
-    @extend %nombre-style;
+    text-align: center;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: italic;
 }
 
 .bombones-boton{
-    @extend %boton-curso;
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+
+    border-radius: 5px;
     
 }
 
 .bombones-boton:hover, .bombones-boton:focus {
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
-    background-color: $color-principal;
+    background-color: #4b9ab4;
 }
 
 
 .postres-boton{
-   @extend %boton-curso;
+    display: block;
+    margin: 0 auto;
+    
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #ffffffd8;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),;
+        
+    height: 36px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
 
+    border-radius: 5px;
 }
 
 .postres-boton:hover, .postres-boton:focus {
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);      
-    background-color: $color-principal;
+    background-color: #4b9ab4;
 }
 
 .boton{
@@ -148,14 +265,6 @@
 
 
 @media (max-width: 768px) {
-    
-    .cursos-title{
-        height: 66%;
-        width: 68%;
-        left: 16%;
-        top: 6%;    
-    }
-
     .cursos-container-arriba{
         flex-direction: column;
 
@@ -163,8 +272,8 @@
             display: block;
             margin: 10px auto;
             padding: 0px 10px;
-            width: 75vh;
-            height: 80vh;
+            width: 55vh;
+            height: 50vh;
         }
         
     }
@@ -177,10 +286,11 @@
             display: block;
             margin: 10px auto;
             padding: 0px 10px;
-            width: 75vh;
-            height: 80vh;
+            width: 55vh;
+            height: 50vh;
         }
     }
+
 
     .torta-image{
         width: 70%;
@@ -206,10 +316,15 @@
         margin-top: 15px;
     }
 
-     
+    .cursos-title{
+        height: 66%;
+        width: 68%;
+        top: 10%;
+        left: 16%;
+    }
+ 
     .cursos-listing{
         z-index: 1;
-        }
+        
+    }
 }
-
-/* Fin cursos*/
