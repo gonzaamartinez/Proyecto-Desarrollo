@@ -52,7 +52,7 @@
 }
 
 .carousel-item img {
-  height: 550px;
+  height: 600px;
 }
 
 @media (max-width: 1000px) {
@@ -174,7 +174,6 @@
   line-height: 0;
   overflow: hidden;
   position: relative;
-  top: 30px;
 }
 .food-image img {
   filter: blur(0px);
@@ -230,7 +229,7 @@
     width: 75vh;
     height: 70vh;
   }
-  .brownie-image .budin-image .palmeritas-image .alfajor-image {
+  .brownie-image {
     margin-top: 15px;
   }
   .food-title {
