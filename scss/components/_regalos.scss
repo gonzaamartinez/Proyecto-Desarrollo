@@ -11,29 +11,16 @@
 }
 
 .regalo-container{
-    display: flex;
-    background-color: #4b9ab4;
-    margin: 20px;
-    justify-content:space-around;
+   @extend %seccion-container;
 
     div {
-        color: #fff;
-        padding: 2%;
-        background-color: #4b4a4a;
-        margin: 10px;
-        border: 1px solid grey;
-        width: 80vh;
-        height: 70vh;
+        @include seccion-div;
     }
 }
 
 
 .caja-image{
-    width: 80%;
-    height: 75%;
-    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
-    display: block;
-    margin: 0 auto; 
+    @include imagenes;
 }
 
 .caja-titulo{
@@ -43,17 +30,9 @@
     font-style: italic;
 }
 
-.caja-parrafo{
-    margin-top: 10%;
-}
-
 
 .box-image{
-    width: 80%;
-    height: 75%;
-    box-shadow: 0 5px 5px 0 rgba(0, 0,0 , .4);
-    display: block;
-    margin: 0 auto; 
+    @include imagenes;
 }
 
 .box-titulo{
@@ -63,32 +42,21 @@
     font-style: italic;
 }
 
-.box-parrafo{
-    margin-top: 10%;
-}
-
 @media (max-width: 768px) {
     .regalo-container{
         flex-direction: column;
           
         div {
-            display: block;
-            margin: 15px auto;
-            padding: 0px 10px;
-            width: 70vh;
-            height: 70vh;
+            @include div-media
         
         }
     }
 
-   .caja-image{
-        margin-top: 15px;
+   .caja-image, .box-image{
+        @include media-img;
    }
 
-   .box-image{
-        margin-top: 15px;
-
-   }
+   
 
 }
 

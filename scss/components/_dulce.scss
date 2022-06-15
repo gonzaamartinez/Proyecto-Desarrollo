@@ -1,5 +1,6 @@
 @import "../base/colors";
 @import "../base/extend";
+@import"../base/mixin";
 
 /* Inicio sección dulces*/
 
@@ -19,16 +20,16 @@
     position: relative;
 
     div {
-        @extend %seccion-div;
+        @include seccion-div;
     }
 }
 
 .brownie-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .budin-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .brownie{
@@ -94,16 +95,16 @@
     @extend %seccion-container;
 
     div {
-        @extend %seccion-div;
+        @include seccion-div;
     }
 }
 
 .palmeritas-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .alfajor-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .palmeritas{
@@ -115,17 +116,21 @@
     @extend %nombre-style;
 }
 
+.text-food{
+    margin-top: 5%;
+    text-align: justify;
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic; 
+}
+
 
 @media (max-width: 768px) {
     .dulce-container-arriba{
         flex-direction: column;
 
         div {
-            display: block;
-            margin: 10px auto;
-            padding: 0px 10px;
-            width: 75vh;
-            height: 70vh;
+           @include div-media;
         }
                 
     }
@@ -134,16 +139,12 @@
         flex-direction: column;
 
         div {
-            display: block;
-            margin: 10px auto;
-            padding: 0px 10px;
-            width: 75vh;
-            height: 70vh;
+            @include div-media;
         }
    }
 
-  .brownie-image{
-        margin-top: 15px;
+  .brownie-image, .budin-image, .palmeritas-image, .alfajor-image{
+        @include media-img
   }
 
    .food-title{

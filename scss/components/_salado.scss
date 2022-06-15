@@ -4,16 +4,16 @@
     @extend %seccion-container;
 
     div {
-        @extend %seccion-div;
+        @include seccion-div;
     }
 }
 
 .chipa-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .scon-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .chipa{
@@ -30,16 +30,16 @@
     @extend %seccion-container;
 
     div {
-        @extend %seccion-div;
+        @include seccion-div;
     }
 }
 
 .palitos-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .tostadas-image{
-    @extend %image-style;
+    @include imagenes;
 }
 
 .palitos{
@@ -56,11 +56,7 @@
         flex-direction: column;
 
         div {
-            display: block;
-            margin: 10px auto;
-            padding: 0px 10px;
-            width: 75vh;
-            height: 70vh;
+            @include div-media
         }
     }
 
@@ -68,31 +64,16 @@
         flex-direction: column;
 
         div {
-            display: block;
-            margin: 10px auto;
-            padding: 0px 10px;
-            width: 75vh;
-            height: 70vh;
+            @include div-media
         }
     }
 
       
-    .chipa-image{
-        margin-top: 15px;
+    .chipa-image, .scon-image, .palitos-image, .tostadas-image{
+        @include media-img
     }
 
-    .scon-image{
-        margin-top: 15px;
-    }
-
-    .palitos-image{
-        margin-top: 15px;
-    }
-
-    .tostadas-image{
-        margin-top: 15px;
-    }
-    
+        
 }
 
 /*Fin salado*/
