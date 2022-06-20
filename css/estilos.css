@@ -136,9 +136,8 @@
   justify-content: space-around;
 }
 
-.postres-titulo, .bombones-titulo, .cookies-titulo, .torta-titulo, .tostadas, .palitos, .scon, .chipa, .alfajor, .palmeritas, .budin, .brownie {
+.box-titulo, .caja-titulo, .postres-titulo, .bombones-titulo, .cookies-titulo, .torta-titulo, .tostadas, .palitos, .scon, .chipa, .alfajor, .palmeritas, .budin, .brownie {
   text-align: center;
-  font-size: 150%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
 }
@@ -176,6 +175,14 @@
   width: 100%;
   height: 85%;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.brownie {
+  font-size: 150%;
+}
+
+.budin {
+  font-size: 150%;
 }
 
 .food-listing {
@@ -242,6 +249,14 @@
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
+.palmeritas {
+  font-size: 150%;
+}
+
+.alfajor {
+  font-size: 150%;
+}
+
 .text-food {
   margin-top: 5%;
   text-align: justify;
@@ -250,6 +265,11 @@
   font-style: italic;
 }
 
+@media (max-width: 1000px) {
+  .text-food {
+    font-size: 80%;
+  }
+}
 @media (max-width: 768px) {
   .dulce-container-arriba {
     flex-direction: column;
@@ -300,27 +320,39 @@
     padding: 0px;
   }
   .text-food {
-    font-size: 80%;
+    font-size: 70%;
     padding-top: 2%;
     padding-left: 1%;
     padding-right: 1%;
   }
 }
 @media (max-width: 400px) {
+  .titulo-seccion {
+    font-size: 150%;
+  }
   .dulce-container-arriba div {
-    width: 10vh;
-    height: 10vh;
-    padding: 0px;
-    margin: 0px;
+    width: 25vh;
+    height: 25vh;
   }
   .dulce-container-abajo div {
-    width: 10vh;
-    height: 10vh;
-    padding: 0px;
-    margin: 0px;
+    width: 25vh;
+    height: 25vh;
   }
   .text-food {
-    font-size: 60%;
+    font-size: 40%;
+  }
+  .alfajor, .brownie, .palmeritas, .budin {
+    font-size: 80%;
+  }
+}
+@media (max-width: 250px) {
+  .dulce-container-arriba div {
+    width: 15vh;
+    height: 15vh;
+  }
+  .dulce-container-abajo div {
+    width: 15vh;
+    height: 15vh;
   }
 }
 /*Fin sección dulces*/
@@ -347,6 +379,14 @@
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
+.chipa {
+  font-size: 150%;
+}
+
+.scon {
+  font-size: 150%;
+}
+
 .salado-container-abajo div {
   color: #fff;
   padding: 2%;
@@ -367,6 +407,14 @@
   width: 100%;
   height: 85%;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.palitos {
+  font-size: 150%;
+}
+
+.tostadas {
+  font-size: 150%;
 }
 
 @media (max-width: 768px) {
@@ -412,14 +460,25 @@
 }
 @media (max-width: 400px) {
   .salado-container-arriba div {
+    width: 25vh;
+    height: 25vh;
+  }
+  .salado-container-abajo div {
+    width: 25vh;
+    height: 25vh;
+  }
+  .palitos, .tostadas, .chipa, .scon {
+    font-size: 80%;
+  }
+}
+@media (max-width: 250px) {
+  .salado-container-arriba div {
     width: 15vh;
-    height: 10vh;
-    padding: 0px;
+    height: 15vh;
   }
   .salado-container-abajo div {
     width: 15vh;
-    height: 10vh;
-    padding: 0px;
+    height: 15vh;
   }
 }
 /*Fin salado*/
@@ -553,6 +612,14 @@
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
+.torta-titulo {
+  font-size: 150%;
+}
+
+.cookies-titulo {
+  font-size: 150%;
+}
+
 .torta-boton {
   display: block;
   margin: 0 auto;
@@ -621,6 +688,14 @@
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
+.bombones-titulo {
+  font-size: 150%;
+}
+
+.postres-titulo {
+  font-size: 150%;
+}
+
 .bombones-boton {
   display: block;
   margin: 0 auto;
@@ -687,7 +762,7 @@
     left: 4%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   .cursos-title {
     height: 80%;
     width: 92%;
@@ -747,14 +822,25 @@
 }
 @media (max-width: 400px) {
   .cursos-container-arriba div {
+    width: 25vh;
+    height: 25vh;
+  }
+  .cursos-container-abajo div {
+    width: 25vh;
+    height: 25vh;
+  }
+  .cookies-titulo, .torta-titulo, .postres-titulo, .bombones-titulo {
+    font-size: 80%;
+  }
+}
+@media (max-width: 400px) and (max-width: 250px) {
+  .cursos-container-arriba div {
     width: 15vh;
-    height: 10vh;
-    padding: 0px;
+    height: 15vh;
   }
   .cursos-container-abajo div {
     width: 15vh;
-    height: 10vh;
-    padding: 0px;
+    height: 15vh;
   }
 }
 /* Inicio Cursos específicos*/
@@ -833,10 +919,7 @@
 }
 
 .caja-titulo {
-  text-align: center;
   font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
 }
 
 .box-image {
@@ -846,10 +929,7 @@
 }
 
 .box-titulo {
-  text-align: center;
   font-size: 150%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -880,9 +960,18 @@
 }
 @media (max-width: 400px) {
   .regalo-container div {
-    width: 15vh;
-    height: 10vh;
+    width: 25vh;
+    height: 25vh;
     padding: 0px;
+  }
+  .caja-titulo, .box-titulo {
+    font-size: 80%;
+  }
+}
+@media (max-width: 250px) {
+  .regalo-container div {
+    width: 15vh;
+    height: 15vh;
   }
 }
 /*Fin regalos*/
@@ -985,9 +1074,8 @@
   justify-content: space-around;
 }
 
-.brownie, .budin, .palmeritas, .alfajor, .chipa, .scon, .palitos, .tostadas, .torta-titulo, .cookies-titulo, .bombones-titulo, .postres-titulo {
+.brownie, .budin, .palmeritas, .alfajor, .chipa, .scon, .palitos, .tostadas, .torta-titulo, .cookies-titulo, .bombones-titulo, .postres-titulo, .caja-titulo, .box-titulo {
   text-align: center;
-  font-size: 150%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
 }

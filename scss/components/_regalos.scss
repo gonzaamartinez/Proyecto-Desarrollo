@@ -24,10 +24,8 @@
 }
 
 .caja-titulo{
-    text-align: center;
+    @extend %nombre-style;
     font-size: 150%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
 }
 
 
@@ -36,10 +34,8 @@
 }
 
 .box-titulo{
-    text-align: center;
+    @extend %nombre-style;
     font-size: 150%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -73,11 +69,23 @@
 @media (max-width: 400px){
     
     .regalo-container div{
-        width: 15vh;
-        height: 10vh;
+        width: 25vh;
+        height: 25vh;
         padding: 0px;
     }
+    .caja-titulo, .box-titulo{
+        font-size: 80%;
+    }
+}
 
+@media (max-width: 250px){
+    .regalo-container div{
+        width: 15vh;
+        height: 15vh;
+        
+    }
+
+   
 }
 
 /*Fin regalos*/

@@ -72,10 +72,12 @@
 
 .torta-titulo{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 .cookies-titulo{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 
@@ -120,10 +122,12 @@
 
 .bombones-titulo{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 .postres-titulo{
    @extend %nombre-style;
+   font-size: 150%;
 }
 
 .bombones-boton{
@@ -168,7 +172,7 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 1000px){
     .cursos-title{
         height: 80%;
         width: 92%;
@@ -236,15 +240,33 @@
   
 
     .cursos-container-arriba div{
-        width: 15vh;
-        height: 10vh;
-        padding: 0px;
+        width: 25vh;
+        height: 25vh;
+       
     }
 
     .cursos-container-abajo div{
-        width: 15vh;
-        height: 10vh;
-        padding: 0px;
+        width: 25vh;
+        height: 25vh;
+        
+    }
+
+    .cookies-titulo, .torta-titulo, .postres-titulo, .bombones-titulo{
+        font-size: 80%;
+    }
+
+    @media (max-width: 250px){
+        .cursos-container-arriba div{
+            width: 15vh;
+            height: 15vh;
+            
+        }
+    
+        .cursos-container-abajo div{
+            width: 15vh;
+            height: 15vh;
+            
+        }
     }
 
 }

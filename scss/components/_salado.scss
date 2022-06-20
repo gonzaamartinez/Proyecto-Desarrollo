@@ -18,10 +18,12 @@
 
 .chipa{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 .scon{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 
@@ -44,10 +46,12 @@
 
 .palitos{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 .tostadas{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 
@@ -97,17 +101,35 @@
   
 
     .salado-container-arriba div{
+        width: 25vh;
+        height: 25vh;
+        
+    }
+
+    .salado-container-abajo div{
+        width: 25vh;
+        height: 25vh;
+        
+    }
+
+    .palitos, .tostadas, .chipa, .scon{
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width: 250px){
+    .salado-container-arriba div{
         width: 15vh;
-        height: 10vh;
-        padding: 0px;
+        height: 15vh;
+        
     }
 
     .salado-container-abajo div{
         width: 15vh;
-        height: 10vh;
-        padding: 0px;
+        height: 15vh;
+        
     }
-
 }
 
 /*Fin salado*/

@@ -34,10 +34,12 @@
 
 .brownie{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 .budin{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 
@@ -109,11 +111,13 @@
 
 .palmeritas{
     @extend %nombre-style;
+    font-size: 150%;
     
 }
 
 .alfajor{
     @extend %nombre-style;
+    font-size: 150%;
 }
 
 .text-food{
@@ -122,6 +126,12 @@
     font-size: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic; 
+}
+
+@media (max-width: 1000px){
+    .text-food{
+        font-size: 80%;
+    }
 }
 
 
@@ -175,7 +185,7 @@
     }
 
     .text-food{
-        font-size: 80%;
+        font-size: 70%;
         padding-top: 2%;
         padding-left: 1%;
         padding-right: 1%;
@@ -184,22 +194,42 @@
 
 @media (max-width: 400px){
     
+    .titulo-seccion{
+        font-size: 150%;
+    }
+
     .dulce-container-arriba div{
-        width: 10vh;
-        height: 10vh;
-        padding: 0px;
-        margin: 0px;
+        width: 25vh;
+        height: 25vh;
+        
     }
 
     .dulce-container-abajo div{
-        width: 10vh;
-        height: 10vh;
-        padding: 0px;
-        margin: 0px;
+        width: 25vh;
+        height: 25vh;
+        
     }
 
     .text-food{
-        font-size: 60%;
+        font-size: 40%;
+    }
+
+    .alfajor, .brownie, .palmeritas ,.budin{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 250px){
+    .dulce-container-arriba div{
+        width: 15vh;
+        height: 15vh;
+        
+    }
+
+    .dulce-container-abajo div{
+        width: 15vh;
+        height: 15vh;
+        
     }
 }
 
