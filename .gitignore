@@ -1,4 +1,3 @@
-package.json
-.gitignore
-estilos.css.map
+/package.json
+/.gitignore
 backup.css
