@@ -24,6 +24,7 @@
 .parrafo-curso, .lista-preparaciones li{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    text-align: justify;
 }
 
 .subtitulo-curso{
@@ -34,4 +35,18 @@
 .curso-info{
     margin-left: 1%;
     margin-top: 2%;
+}
+
+@media(max-width: 1000px){
+    .container-producto{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media(max-width: 576px){
+    .container-producto {
+        width: 70%;
+        height: 70%;
+    }
 }

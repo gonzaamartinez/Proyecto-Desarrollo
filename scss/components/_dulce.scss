@@ -157,5 +157,30 @@
 
 }
 
+@media (max-width: 576px){
+    .titulo-seccion{
+        font-size: 200%;
+    }
+
+    .dulce-container-arriba div{
+        width: 50vh;
+        height: 45vh;
+        padding: 0px;
+    }
+
+    .dulce-container-abajo div{
+        width: 50vh;
+        height: 45vh;
+        padding: 0px;
+    }
+
+    .text-food{
+        font-size: 80%;
+        padding-top: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
 
 /*Fin sección dulces*/

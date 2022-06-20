@@ -60,6 +60,11 @@
     height: 350px;
   }
 }
+@media (max-width: 576px) {
+  .carousel-container {
+    width: 70%;
+  }
+}
 /* Fin carrusel*/
 /* Redes sociales*/
 .redes-container {
@@ -279,6 +284,27 @@
     z-index: 1;
   }
 }
+@media (max-width: 576px) {
+  .titulo-seccion {
+    font-size: 200%;
+  }
+  .dulce-container-arriba div {
+    width: 50vh;
+    height: 45vh;
+    padding: 0px;
+  }
+  .dulce-container-abajo div {
+    width: 50vh;
+    height: 45vh;
+    padding: 0px;
+  }
+  .text-food {
+    font-size: 80%;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
 /*Fin sección dulces*/
 /*Inicio sección salado*/
 .salado-container-arriba div {
@@ -352,6 +378,18 @@
     display: flex;
     margin: 0 auto;
     margin-top: 5%;
+  }
+}
+@media (max-width: 576px) {
+  .salado-container-arriba div {
+    width: 50vh;
+    height: 45vh;
+    padding: 0px;
+  }
+  .salado-container-abajo div {
+    width: 50vh;
+    height: 45vh;
+    padding: 0px;
   }
 }
 /*Fin salado*/
@@ -665,6 +703,18 @@
     z-index: 1;
   }
 }
+@media (max-width: 576px) {
+  .cursos-container-arriba div {
+    width: 50vh;
+    height: 45vh;
+    padding: 0px;
+  }
+  .cursos-container-abajo div {
+    width: 50vh;
+    height: 45vh;
+    padding: 0px;
+  }
+}
 /* Inicio Cursos específicos*/
 .container-producto:hover .imagen-producto {
   transform: scale(1.25);
@@ -687,6 +737,7 @@
 .parrafo-curso, .lista-preparaciones li {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  text-align: justify;
 }
 
 .subtitulo-curso {
@@ -699,6 +750,18 @@
   margin-top: 2%;
 }
 
+@media (max-width: 1000px) {
+  .container-producto {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .container-producto {
+    width: 70%;
+    height: 70%;
+  }
+}
 /*Inicio regalos*/
 .armamos {
   margin-top: 5%;
@@ -763,6 +826,13 @@
     display: flex;
     margin: 0 auto;
     margin-top: 5%;
+  }
+}
+@media (max-width: 576px) {
+  .regalo-container div {
+    width: 50vh;
+    height: 45vh;
+    padding: 0px;
   }
 }
 /*Fin regalos*/

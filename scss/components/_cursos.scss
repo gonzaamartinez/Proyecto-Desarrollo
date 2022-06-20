@@ -213,3 +213,20 @@
         
     }
 }
+
+@media (max-width: 576px){
+    
+    .cursos-container-arriba div{
+        width: 50vh;
+        height: 45vh;
+        padding: 0px;
+    }
+
+    .cursos-container-abajo div{
+        width: 50vh;
+        height: 45vh;
+        padding: 0px;
+    }
+
+    
+}
