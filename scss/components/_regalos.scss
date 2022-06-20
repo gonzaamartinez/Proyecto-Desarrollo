@@ -63,13 +63,21 @@
 @media (max-width: 576px){
     
     .regalo-container div{
-        width: 50vh;
-        height: 45vh;
+        width: 47vh;
+        height: 42vh;
         padding: 0px;
     }
 
+}
 
+@media (max-width: 400px){
     
+    .regalo-container div{
+        width: 15vh;
+        height: 10vh;
+        padding: 0px;
+    }
+
 }
 
 /*Fin regalos*/

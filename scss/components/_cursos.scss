@@ -217,16 +217,36 @@
 @media (max-width: 576px){
     
     .cursos-container-arriba div{
-        width: 50vh;
-        height: 45vh;
+        width: 47vh;
+        height: 42vh;
         padding: 0px;
     }
 
     .cursos-container-abajo div{
-        width: 50vh;
-        height: 45vh;
+        width: 47vh;
+        height: 42vh;
         padding: 0px;
     }
 
     
 }
+
+
+@media (max-width: 400px){
+  
+
+    .cursos-container-arriba div{
+        width: 15vh;
+        height: 10vh;
+        padding: 0px;
+    }
+
+    .cursos-container-abajo div{
+        width: 15vh;
+        height: 10vh;
+        padding: 0px;
+    }
+
+}
+
+

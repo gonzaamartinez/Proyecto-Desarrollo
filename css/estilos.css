@@ -45,6 +45,7 @@
 /*Carrusel de fotos*/
 .carousel-container {
   width: 50%;
+  height: 50%;
   display: block;
   margin: 4% auto;
   border: 2.5px solid #000;
@@ -289,13 +290,13 @@
     font-size: 200%;
   }
   .dulce-container-arriba div {
-    width: 50vh;
-    height: 45vh;
+    width: 47vh;
+    height: 42vh;
     padding: 0px;
   }
   .dulce-container-abajo div {
-    width: 50vh;
-    height: 45vh;
+    width: 47vh;
+    height: 42vh;
     padding: 0px;
   }
   .text-food {
@@ -303,6 +304,21 @@
     padding-top: 2%;
     padding-left: 1%;
     padding-right: 1%;
+  }
+}
+@media (max-width: 400px) {
+  .dulce-container-arriba div {
+    width: 15vh;
+    height: 10vh;
+    padding: 0px;
+  }
+  .dulce-container-abajo div {
+    width: 15vh;
+    height: 10vh;
+    padding: 0px;
+  }
+  .text-food {
+    font-size: 60%;
   }
 }
 /*Fin sección dulces*/
@@ -382,13 +398,25 @@
 }
 @media (max-width: 576px) {
   .salado-container-arriba div {
-    width: 50vh;
-    height: 45vh;
+    width: 47vh;
+    height: 42vh;
     padding: 0px;
   }
   .salado-container-abajo div {
-    width: 50vh;
-    height: 45vh;
+    width: 47vh;
+    height: 42vh;
+    padding: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .salado-container-arriba div {
+    width: 15vh;
+    height: 10vh;
+    padding: 0px;
+  }
+  .salado-container-abajo div {
+    width: 15vh;
+    height: 10vh;
     padding: 0px;
   }
 }
@@ -705,13 +733,25 @@
 }
 @media (max-width: 576px) {
   .cursos-container-arriba div {
-    width: 50vh;
-    height: 45vh;
+    width: 47vh;
+    height: 42vh;
     padding: 0px;
   }
   .cursos-container-abajo div {
-    width: 50vh;
-    height: 45vh;
+    width: 47vh;
+    height: 42vh;
+    padding: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .cursos-container-arriba div {
+    width: 15vh;
+    height: 10vh;
+    padding: 0px;
+  }
+  .cursos-container-abajo div {
+    width: 15vh;
+    height: 10vh;
     padding: 0px;
   }
 }
@@ -738,6 +778,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-align: justify;
+  padding-right: 2%;
 }
 
 .subtitulo-curso {
@@ -830,8 +871,15 @@
 }
 @media (max-width: 576px) {
   .regalo-container div {
-    width: 50vh;
-    height: 45vh;
+    width: 47vh;
+    height: 42vh;
+    padding: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .regalo-container div {
+    width: 15vh;
+    height: 10vh;
     padding: 0px;
   }
 }
@@ -883,6 +931,16 @@
   background-color: #4b9ab4;
 }
 
+@media (max-width: 768px) {
+  .formulario {
+    width: 150%;
+  }
+}
+@media (max-width: 400px) {
+  .formulario {
+    width: 170%;
+  }
+}
 /*Fin formulario*/
 /*Inicio post-formulario*/
 .gracias {
@@ -937,6 +995,10 @@ body {
   font-family: sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.disclaimer {
+  display: none;
 }
 
 /*# sourceMappingURL=estilos.css.map */

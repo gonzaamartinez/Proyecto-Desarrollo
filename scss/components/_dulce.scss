@@ -163,14 +163,14 @@
     }
 
     .dulce-container-arriba div{
-        width: 50vh;
-        height: 45vh;
+        width: 47vh;
+        height: 42vh;
         padding: 0px;
     }
 
     .dulce-container-abajo div{
-        width: 50vh;
-        height: 45vh;
+        width: 47vh;
+        height: 42vh;
         padding: 0px;
     }
 
@@ -181,6 +181,26 @@
         padding-right: 1%;
     }
 }
+
+@media (max-width: 400px){
+    
+    .dulce-container-arriba div{
+        width: 15vh;
+        height: 10vh;
+        padding: 0px;
+    }
+
+    .dulce-container-abajo div{
+        width: 15vh;
+        height: 10vh;
+        padding: 0px;
+    }
+
+    .text-food{
+        font-size: 60%;
+    }
+}
+
 
 
 /*Fin sección dulces*/
